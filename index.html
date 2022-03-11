@@ -77,9 +77,42 @@
                 <h1>Reported posts</h1>
             </div>
         </main>
+
+        <section id="qna-section">
+          <div class="row w-75 mx-auto">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                     <h5>How Javascript works</h5>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>JavaScript is a scripting programming language.</strong>JavaScript basically reads the codes from the top and keeps coming down. When we write a code, the computer cannot understand it directly. Since JavaScript is a high level language, it is difficult for computers to understand. When we write a code, JavaScript converts that code into machine language so that the computer can easily understand it. JavaScript is also called Just in Time compound compiling language. JavaScript is a single threaded programming language. JavaScript has a data structure called 'call stack'. So JavaScript can only perform one task at a time. Each browser uses an engine to run JavaScript, such as the Google Chrome v8 engine, Firefox SpiderMonkey, Microsoft Edge Cycle. All in all, the code we write is first analyzed by JavaScript, then converted into machine code, and then the converted machine code is sent to the computer. The computer displays it in front of us through a browser. Each browser uses its own engine to run JavaScript
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <h5>Difference beetween local storage & session storage</h5>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Local Storage and Session Storage</strong> Much the same, but there are some differences.Local Storage data does not expire but session storage data is deleted as soon as the browser/tab is closed.Local Storage not session based. so when need to delete must using JavaScript to delete it.local storage has no transfer of data to the server.Session Storage stores a lot of data on the client's computer for the current session only.Local Storage key Value Format stores data on client's computer with no expiration date.Browser allocates a certain amount of space(10MB) to store data for local storage and session storage.Local Storage and Session Storage both do not transfer any data to the server side and two storage are client side read only. There is no specific database for session storage. When session storage needs to be used, local storage is used for that particular session.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        </section>
         <footer></footer>
 
         <!-- add javascript  file  -->
         <script src="./js/app.js"></script>
+        <!-- bundle min js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
